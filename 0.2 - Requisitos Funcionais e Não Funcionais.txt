@@ -1,0 +1,96 @@
+Requisitos Funcionais
+
+1. Gerenciamento de Usuários
+    - Deve ser possível criar, editar, deletar e listar usuários.
+    - Usuários devem ter atributos como: senha, último login, superusuário, nome de usuário, nome, sobrenome, ativo, data de adesão, e-mail, nome completo, membro da equipe, aprovado e empresa associada.
+    - Usuários podem ser associados a grupos e permissões específicas.
+    - Deve ser possível registrar os logins dos usuários.
+
+2. Gerenciamento de Empresas
+    - Deve ser possível criar, editar, deletar e listar empresas.
+    - Empresas devem ter atributos como: razão social, nome fantasia, CNPJ, endereço, cidade, bairro, estado, CEP, data de fundação, telefone, e-mail, responsável, contato e logo.
+
+3. Gerenciamento de Tipos de Curso
+    - Deve ser possível criar, editar, deletar e listar tipos de curso.
+    - Tipos de curso devem ter uma descrição e podem estar associados a uma empresa.
+
+4. Gerenciamento de Cursos
+    - Deve ser possível criar, editar, deletar e listar cursos.
+    - Cursos devem ter atributos como: nome, valor, externo, ativo, resumo, imagem, empresa associada, tipo de curso associado, carga horária e conteúdo programático.
+
+5. Gerenciamento de Apostilas
+    - Deve ser possível criar, editar, deletar e listar apostilas.
+    - Apostilas devem ter atributos como: nome, arquivo, slug e curso associado.
+
+6. Gerenciamento de Capítulos
+    - Deve ser possível criar, editar, deletar e listar capítulos.
+    - Capítulos devem ter atributos como: nome, objetivo e curso associado.
+
+7. Gerenciamento de Aulas
+    - Deve ser possível criar, editar, deletar e listar aulas.
+    - Aulas devem ter atributos como: nome, objetivo e capítulo associado.
+
+8. Gerenciamento de Boletins
+    - Deve ser possível criar, editar, deletar e listar boletins.
+    - Boletins devem estar associados a um aluno, aula, capítulo e curso.
+
+9. Gerenciamento de Notas
+    - Deve ser possível criar, editar, deletar e listar notas.
+    - Notas devem ter um valor e estar associadas a um aluno e aula.
+
+10. Gerenciamento de Certificados
+    - Deve ser possível criar, editar, deletar e listar certificados.
+    - Certificados devem ter atributos como: data de conclusão, data de geração, código de autenticação e aluno associado.
+
+11. Gerenciamento de Responsabilidades
+    - Deve ser possível criar, editar, deletar e listar responsabilidades.
+    - Responsabilidades devem ter uma descrição.
+
+12. Associação de Usuários a Grupos e Permissões
+    - Deve ser possível associar usuários a grupos e permissões específicas.
+    - Grupos e permissões devem ser gerenciáveis (criação, edição, deleção, listagem).
+
+13. Gerenciamento de Turmas
+    - Deve ser possível criar, editar, deletar e listar turmas.
+    - Turmas devem ter atributos como: nome e empresa associada.
+
+14. Associação de Usuários a Turmas
+    - Deve ser possível associar usuários a turmas.
+
+15. Associação de Notas a Boletins
+    - Deve ser possível associar notas a boletins específicos.
+
+16. Associação de Cursos a Certificados
+    - Deve ser possível associar cursos a certificados.
+
+ Requisitos Não Funcionais
+
+1. Desempenho
+    - As operações de criação, leitura, atualização e exclusão (CRUD) devem ser realizadas em tempo hábil, com tempos de resposta aceitáveis para a usabilidade.
+
+2. Escalabilidade
+    - O sistema deve suportar um número crescente de usuários, cursos, empresas e outras entidades sem degradação significativa no desempenho.
+
+3. Segurança
+    - Todas as operações devem ser seguras, garantindo a integridade e confidencialidade dos dados.
+    - O acesso deve ser controlado por permissões e grupos de usuários.
+    - Dados sensíveis, como senhas, devem ser armazenados de forma segura (criptografados).
+
+4. Usabilidade
+    - A interface do usuário deve ser intuitiva e fácil de usar.
+    - Devem ser fornecidos feedbacks adequados para as ações do usuário, como confirmações de sucesso e mensagens de erro.
+
+5. Disponibilidade
+    - O sistema deve estar disponível e operacional pelo menos 99% do tempo, excluindo períodos de manutenção programada.
+
+6. Manutenibilidade
+    - O código do sistema deve ser modular e bem documentado para facilitar a manutenção e futuras expansões.
+
+7. Compatibilidade
+    - O sistema deve ser compatível com os principais navegadores web e dispositivos móveis.
+
+8. Backup e Recuperação
+    - Deve haver mecanismos de backup regulares e estratégias de recuperação de desastres para garantir a continuidade do serviço e a proteção dos dados.
+
+9. Auditoria
+    - Todas as ações críticas, como alterações de dados e operações de login, devem ser registradas para fins de auditoria e conformidade.
